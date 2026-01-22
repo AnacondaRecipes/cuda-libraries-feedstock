@@ -14,19 +14,6 @@ build:
 
 requirements:
   run:
-    - cuda-cudart 13.0.96
-    - cuda-nvrtc 13.0.88
-    - cuda-opencl 13.0.85    # [linux64 or win]
-    - libcublas 13.1.0.3
-    - libcufft 12.0.0.61
-    - libcufile 1.15.1.6       # [linux]
-    - libcurand 10.4.0.35
-    - libcusolver 12.0.4.66
-    - libcusparse 12.6.3.3
-    - libnpp 13.0.1.2
-    - libnvfatbin 13.0.85
-    - libnvjitlink 13.0.88
-    - libnvjpeg 13.0.1.86
     - cuda-cudart 13.1.80
     - cuda-nvrtc 13.1.115
     - cuda-opencl 13.1.115    # [linux64 or win]

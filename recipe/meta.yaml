@@ -10,7 +10,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [osx or ppc64le]
+  skip: true  # [osx]
 
 requirements:
   run:
@@ -18,7 +18,7 @@ requirements:
     - cuda-nvrtc 12.9.86
     - cuda-opencl 12.9.19    # [linux64 or win]
     - libcublas 12.9.1.4
-    - libcufft 11.4.1.4 
+    - libcufft 11.4.1.4
     - libcufile 1.14.1.1       # [linux]
     - libcurand 10.3.10.19
     - libcusolver 11.7.5.82
@@ -37,10 +37,12 @@ about:
   license_file: LICENSE.txt
   license: LicenseRef-NVIDIA-End-User-License-Agreement
   license_url: https://docs.nvidia.com/cuda/eula/index.html
+  license_family: Other
   summary: Meta-package containing all available library runtime packages.
   description: |
     Meta-package containing all available library runtime packages.
   doc_url: https://docs.nvidia.com/cuda/index.html
+  dev_url: https://docs.nvidia.com/cuda/index.html
 
 extra:
   recipe-maintainers:

@@ -1,4 +1,4 @@
-{% set version = "13.1.1" %}
+{% set version = "13.1.2" %}
 
 package:
   name: cuda-libraries
@@ -17,9 +17,10 @@ requirements:
     - cuda-cudart 13.1.80
     - cuda-nvrtc 13.1.115
     - cuda-opencl 13.1.115    # [linux64 or win]
-    - libcublas 13.2.1.1
+    - libcublas 13.2.2.2
     - libcufft 12.1.0.78
     - libcufile 1.16.1.26       # [linux]
+    - libcuobjclient 1.0.0.26  # [linux64 or aarch64]
     - libcurand 10.4.1.81
     - libcusolver 12.0.9.81
     - libcusparse 12.7.3.1
@@ -37,6 +38,7 @@ about:
   license_file: LICENSE.txt
   license: LicenseRef-NVIDIA-End-User-License-Agreement
   license_url: https://docs.nvidia.com/cuda/eula/index.html
+  license_family: Other
   summary: Meta-package containing all available library runtime packages.
   description: |
     Meta-package containing all available library runtime packages.
@@ -44,7 +46,5 @@ about:
   dev_url: https://docs.nvidia.com/cuda/index.html
 
 extra:
-  skip-lints:
-    - license_file_overspecified
   recipe-maintainers:
     - conda-forge/cuda
